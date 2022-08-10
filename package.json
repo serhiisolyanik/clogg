@@ -1,5 +1,6 @@
 {
-  "name": "clogg",
+  "name": "@sergeysolyanik/clogg",
+  "scope": "@sergeysolyanik",
   "version": "1.0.0",
   "description": "This is an improved console logging tool with new features.",
   "author": "Serhii Solyanik <invincibledev@proton.me>",

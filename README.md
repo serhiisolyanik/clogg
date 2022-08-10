@@ -10,7 +10,7 @@ adds asynchronous methods
 Install Clogg with npm
 
 ```bash
-  npm install -D clogg
+  npm install -D @sergeysolyanik/clogg
 ```
     
 ## API Reference
@@ -18,7 +18,7 @@ Install Clogg with npm
 #### All console methods return this object for chaining.
 
 ```js
-import C from "clogg"
+import C from "@sergeysolyanik/clogg"
   
 C.log("Hello ")
   .info("World!")
@@ -56,7 +56,7 @@ C.timeout(key, timeout)
 ### New Module: 
 
 ```js
-import Clogger from "clogg"
+import Clogger from "@sergeysolyanik/clogg"
 // This module logs any data about object
 // Clogger.anyMethod(data) is the same, as 
 // data = console.log
