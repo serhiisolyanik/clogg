@@ -1,6 +1,6 @@
 {
   "name": "@sergeysolyanik/clogg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is an improved console logging tool with new features.",
   "author": "Serhii Solyanik <invincibledev@proton.me>",
   "main": "index.mjs",
