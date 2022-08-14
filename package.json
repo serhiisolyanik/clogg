@@ -13,7 +13,11 @@
     "test": "jest"
   },
   "keywords": [
-    "clogg, console tool, log, logging tool"
+    "clogg",
+    "clog",
+    "console tool",
+    "log",
+    " logging tool"
   ],
   "license": "MIT",
   "private": true,

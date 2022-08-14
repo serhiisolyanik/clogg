@@ -1,11 +1,15 @@
 {
   "name": "@sergeysolyanik/clogg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is an improved console logging tool with new features.",
   "author": "Serhii Solyanik <invincibledev@proton.me>",
   "main": "index.mjs",
   "keywords": [
-    "clogg, console tool, log, logging tool"
+    "clogg",
+    "clog",
+    "console tool",
+    "log",
+    " logging tool"
   ],
   "license": "MIT",
   "scope": "@sergeysolyanik"
