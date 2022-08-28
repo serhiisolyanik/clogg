@@ -3,5 +3,4 @@ prod
 dist
 coverage
 cache
-plans
 *.log

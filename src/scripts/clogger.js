@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-// This module logs any data by invoking console functions
+// This module logs any data by invoking console functions and window methods
 "use strict";
 var Clogger = {
+  // Console methods
   log: function (data) {
     data = console.log;
     return this;
@@ -22,6 +23,11 @@ var Clogger = {
     e = console.error;
     return this;
   },
+  // Window methods
+  alert: function (data) {
+    data = window.alert;
+    return this;
+  },
 };
 Object.freeze(Clogger);
-module.exports = Clogger;
+exports["default"] = Clogger;

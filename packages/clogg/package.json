@@ -1,9 +1,17 @@
 {
   "name": "@sergeysolyanik/clogg",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "This is an improved console logging tool with new features.",
   "author": "Serhii Solyanik <invincibledev@proton.me>",
-  "main": "index.mjs",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serhiisolyanik/clogg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/serhiisolyanik/clogg/issues",
+    "email": "invincibledev@proton.me"
+  },
   "keywords": [
     "clogg",
     "clog",

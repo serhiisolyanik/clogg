@@ -4,6 +4,7 @@
 import CInt from "../ts-interfaces/console-interface";
 
 const C: CInt = {
+  // Console methods
   log(...data) {
     console.log(...data);
     return this;
@@ -103,8 +104,18 @@ const C: CInt = {
     console.trace(...data);
     return this;
   },
+  // Window methods
+  alert(...data) {
+    window.alert(...data);
+    return this;
+  },
 
-  // Async timeout console function
+  confirm(message) {
+    window.confirm(message);
+    return this;
+  },
+  // Miscellaneous
+  // Async timeout function
   timeout(key, timeout, ...data) {
     if (arguments.length === 0) return this;
     for (const method in this) {
@@ -118,7 +129,7 @@ const C: CInt = {
     return this;
   },
 
-  // Async interval console function
+  // Async interval function
   interval(key, timeout, ...data) {
     if (arguments.length === 0) return this;
     for (const method in this) {

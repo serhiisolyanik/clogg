@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-this-alias */
-// This is an improved console with similar function and new methods that can be chained
+// This is an improved console with similar function and new methods
 "use strict";
 var __spreadArray =
   (this && this.__spreadArray) ||
@@ -15,6 +13,7 @@ var __spreadArray =
     return to.concat(ar || Array.prototype.slice.call(from));
   };
 var C = {
+  // Console methods
   log: function () {
     var data = [];
     for (var _i = 0; _i < arguments.length; _i++) {
@@ -139,12 +138,24 @@ var C = {
     console.trace.apply(console, data);
     return this;
   },
-  // Async timeout console function
-  timeout: function (key, timeout, ...data) {
-    var _this = this;
-    if (!data) {
-      let data = [];
+  // Window methods
+  alert: function () {
+    var data = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+      data[_i] = arguments[_i];
     }
+    window.alert.apply(window, data);
+    return this;
+  },
+  confirm: function (message) {
+    window.confirm(message);
+    return this;
+  },
+  // Miscellaneous
+  // Async timeout function
+  timeout: function (key, timeout) {
+    var _this = this;
+    var data = [];
     for (var _i = 2; _i < arguments.length; _i++) {
       data[_i - 2] = arguments[_i];
     }
@@ -161,12 +172,10 @@ var C = {
     }
     return this;
   },
-  // Async interval console function
-  interval: function (key, timeout, ...data) {
+  // Async interval function
+  interval: function (key, timeout) {
     var _this = this;
-    if (!data) {
-      let data = [];
-    }
+    var data = [];
     for (var _i = 2; _i < arguments.length; _i++) {
       data[_i - 2] = arguments[_i];
     }
@@ -185,4 +194,4 @@ var C = {
   },
 };
 Object.freeze(C);
-module.exports = C;
+exports["default"] = C;

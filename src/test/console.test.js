@@ -1,4 +1,4 @@
-const C = require("../scripts/console.js");
+const { default: C } = require("../scripts/console.js");
 
 test("Check Object Properties", () => {
   expect(C).toHaveProperty("log");
@@ -21,6 +21,8 @@ test("Check Object Properties", () => {
   expect(C).toHaveProperty("timeStamp");
   expect(C).toHaveProperty("timeEnd");
   expect(C).toHaveProperty("trace");
+  expect(C).toHaveProperty("alert");
+  expect(C).toHaveProperty("confirm");
   expect(C).toHaveProperty("timeout");
   expect(C).toHaveProperty("interval");
 });

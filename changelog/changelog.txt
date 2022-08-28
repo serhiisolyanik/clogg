@@ -1,2 +1,3 @@
+1.1.0 - Add C.confirm(), C.alert(), Clogger.alert()
 1.0.2 - Fix Keywords and Add Changelog
 1.0.0 - 1.0.1 - Initial Release

@@ -1,9 +1,8 @@
 {
   "name": "@sergeysolyanik/clogg",
-  "scope": "@sergeysolyanik",
-  "version": "1.0.2",
   "description": "This is an improved console logging tool with new features.",
   "author": "Serhii Solyanik <invincibledev@proton.me>",
+  "scope": "@sergeysolyanik",
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",

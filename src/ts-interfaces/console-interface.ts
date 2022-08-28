@@ -1,8 +1,7 @@
 // This is the console interface
-"use strict";
-
 interface CInt {
   [index: string]: typeof Function.prototype;
+  // Console methods
   log(...data: unknown[]): CInt;
   info(...data: unknown[]): CInt;
   dbg(...data: unknown[]): CInt;
@@ -23,9 +22,13 @@ interface CInt {
   timeStamp(label: string | undefined): CInt;
   timeEnd(label: string | undefined): CInt;
   trace(...data: unknown[]): CInt;
-  // Async timeout console function
+  // Window methods
+  alert(...data: unknown[]): CInt;
+  confirm(message: string | undefined): CInt;
+  // Miscellaneous
+  // Async timeout function
   timeout(key: string, timeout: number, ...data: unknown[]): CInt;
-  // Async interval console function
+  // Async interval function
   interval(key: string, timeout: number, ...data: unknown[]): CInt;
 }
 
